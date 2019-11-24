@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF_8">
+        <title>Guessing game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+               
+    </head>
+    <body>
+      <script>              
+        
+        alert("Hello welcome to the guessing game! click okay to continue  ❤🙂😘");
+        alert("You have 4 guesses 1-60");
+        
+
+        var questions = [
+            
+        {
+            prompt: "What is your first guess? (7)  (13) (8) ",
+            answer: "50"
+        },
+        {
+            prompt: "What is your second guess? (30) (9) (20) ",
+            answer: "10"
+        },
+        {
+            prompt: "What is your third guess? (11) (44) (5) ",
+            answer: "3"
+        },
+        {
+            
+            prompt: "What is your last guess? (7) (6) (2) ",
+            answer: "8"
+        },
+        ];
+
+        
+        var score = 0;
+
+        for(var i = 0; i < questions.length; i++){
+
+        var response = window.prompt(questions[i].prompt);
+        if(response == questions[i].answer){
+            score++;
+            alert("Correct! your score" + score + questions.length);
+        } else {
+            alert("WRONG! please try again"); 
+        }           
+
+        }
+
+
+        alert("The game is finished. Thanks for playing");
+
+     </script>        
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </body>
+</html>
